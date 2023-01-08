@@ -16,14 +16,15 @@ trait HasMethodCaller
 
     public static function __callStatic($method, $args)
     {
-        // TODO : implement here;
+        return (new static)->$method(...$args);
     }
 
 
     private function methodCaller($object, $method, $args)
     {
-        // TODO: Implement
+        return call_user_func_array(array($object, $method.'Method'), $args);
     }
+
 
 
     protected function setAllowedMethods($array)
