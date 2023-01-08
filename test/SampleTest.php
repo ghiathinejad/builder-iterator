@@ -9,7 +9,7 @@ final class SampleTest extends TestCase
     protected static $answer_file_path = __DIR__ . '/../index.php';
     protected static $db_host = 'localhost';
     protected static $db_username = 'root';
-    protected static $db_password = '';
+    protected static $db_password = 'Uyo>y4cwRdeT';
     protected static $db_name = 'quera';
     protected static $table_name = 'users';
     protected static $post;
