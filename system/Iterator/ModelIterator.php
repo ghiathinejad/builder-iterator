@@ -13,7 +13,7 @@ class ModelIterator implements \Iterator
 
     public function current(): string|array
     {
-        return $this->array[$this->position];
+        // TODO: Implement
     }
 
     public function key(): int
