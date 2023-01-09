@@ -13,7 +13,17 @@ class ModelIterator implements \Iterator
 
     public function current(): string|array
     {
-        // TODO: Implement
+        $myArray = $this->array;
+        array_walk_recursive(
+            $myArray,
+            function (&$value) {
+                if (!is_array($value)) {
+                    $value = 'Q'.$value;
+                }
+            }
+        );
+
+        return $myArray[$this->position];
     }
 
     public function key(): int
